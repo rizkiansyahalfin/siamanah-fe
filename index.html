@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fundraising Platform — Manage campaigns, donations, and reporting."
+    />
+    <title>Fundraising Platform</title>
+    <!-- TODO: Change YOUR_DOMAIN_HERE to production domain -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Fundraising Platform",
+        "url": "https://fundraising.id",
+        "logo": "https://fundraising.id/vite.svg"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- Midtrans Snap script - Dynamic Environment -->
+    <script type="text/javascript">
+      (function() {
+        const isProd = "%VITE_MIDTRANS_IS_PRODUCTION%" === "true";
+        const clientKey = "%VITE_MIDTRANS_CLIENT_KEY%";
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = isProd 
+          ? 'https://app.midtrans.com/snap/snap.js' 
+          : 'https://app.sandbox.midtrans.com/snap/snap.js';
+        script.setAttribute('data-client-key', clientKey);
+        document.head.appendChild(script);
+      })();
+    </script>
+  </body>
+</html>
