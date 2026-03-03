@@ -32,7 +32,7 @@ export function RegisterPage() {
 
 
     const handleGoogleLogin = () => {
-        window.location.href = `${import.meta.env.VITE_API_BASE_URL || "http://localhost:3000"}/api/v1/auth/google`;
+        window.location.href = `${import.meta.env.VITE_API_URL}/api/v1/auth/google`;
     };
 
     const onSubmit = async (data: RegisterFormData) => {
