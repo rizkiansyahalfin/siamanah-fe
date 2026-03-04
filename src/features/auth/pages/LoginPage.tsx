@@ -78,7 +78,7 @@ export function LoginPage() {
                             htmlFor="email"
                             className="text-xs text-gray-700 font-semibold ml-1"
                         >
-                            Masukkan Email
+                            Alamat Email
                         </Label>
                         <Input
                             id="email"
@@ -100,13 +100,13 @@ export function LoginPage() {
                             htmlFor="password"
                             className="text-xs text-gray-700 font-semibold ml-1"
                         >
-                            Masukkan Password
+                            Kata Sandi
                         </Label>
                         <div className="relative">
                             <Input
                                 id="password"
                                 type={showPassword ? "text" : "password"}
-                                placeholder="Password"
+                                placeholder="Kata Sandi"
                                 {...register("password")}
                                 className={`h-11 bg-white/85 rounded-2xl border-white/45 pr-12 focus-visible:ring-blue-500 ${errors.password ? "border-red-500" : ""
                                     }`}
@@ -181,16 +181,16 @@ export function LoginPage() {
                                 fill="#EA4335"
                             />
                         </svg>
-                        Login dengan Google
+                        Masuk dengan Google
                     </Button>
 
                     <p className="text-center text-xs text-gray-700 mt-6 font-medium">
-                        Belum Punya Akun?{" "}
+                        Belum memiliki akun?{" "}
                         <Link
                             to={`/register${window.location.search}`}
                             className="font-bold text-blue-600 hover:text-blue-700 hover:underline"
                         >
-                            Buat Akun
+                            Daftar Sekarang
                         </Link>
                     </p>
                 </form>

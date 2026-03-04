@@ -77,23 +77,23 @@ export function LandingPage() {
                             <span className="relative flex h-2 w-2 mr-2">
                                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                             </span>
-                            Start your journey today
+                            Mulai langkah kebaikan Anda hari ini
                         </div>
                         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-slate-900 leading-tight">
-                            Empowering <span className="text-green-600">Dreams</span> Through Community Support.
+                            Mewujudkan <span className="text-green-600">Mimpi</span> Melalui Dukungan Komunitas.
                         </h1>
                         <p className="text-base sm:text-lg lg:text-xl text-slate-600 max-w-lg">
-                            A transparent ecosystem for creators and donors. Launch your mission or support a cause you believe in with confidence.
+                            Ekosistem transparan untuk penggalang dana dan donatur. Mulai misi Anda atau dukung kampanye yang Anda percayai dengan percaya diri.
                         </p>
                         <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
                             <Link to="/create-campaign">
                                 <Button size="lg" className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white rounded-full px-8 h-12 text-base sm:text-lg">
-                                    Start a Campaign
+                                    Galang Dana Sekarang
                                 </Button>
                             </Link>
                             <Link to="/explore">
                                 <Button size="lg" variant="outline" className="w-full sm:w-auto border-green-600 text-green-600 hover:bg-green-50 rounded-full px-8 h-12 text-base sm:text-lg">
-                                    Donate Now
+                                    Donasi Sekarang
                                 </Button>
                             </Link>
                         </div>
@@ -110,10 +110,10 @@ export function LandingPage() {
                             <div className="absolute bottom-6 left-6 right-6 p-4 sm:p-6 bg-black/60 backdrop-blur-md rounded-2xl text-white">
                                 <div className="flex justify-between items-end">
                                     <div>
-                                        <p className="text-sm font-medium opacity-80">Latest Success</p>
-                                        <h3 className="text-lg sm:text-xl font-bold">Solar Energy for Schools</h3>
+                                        <p className="text-sm font-medium opacity-80">Keberhasilan Terbaru</p>
+                                        <h3 className="text-lg sm:text-xl font-bold">Energi Surya untuk Sekolah</h3>
                                     </div>
-                                    <div className="bg-green-500 text-xs font-bold px-3 py-1 rounded-full uppercase">Funded</div>
+                                    <div className="bg-green-500 text-xs font-bold px-3 py-1 rounded-full uppercase">Tercapai</div>
                                 </div>
                             </div>
                         </div>
@@ -127,19 +127,19 @@ export function LandingPage() {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
                         <div className="space-y-1 sm:space-y-2">
                             <p className="text-2xl sm:text-4xl font-bold text-white">$42.8M</p>
-                            <p className="text-[10px] sm:text-sm text-slate-400 uppercase tracking-wider">Total Raised</p>
+                            <p className="text-[10px] sm:text-sm text-slate-400 uppercase tracking-wider">Total Terkumpul</p>
                         </div>
                         <div className="space-y-1 sm:space-y-2">
                             <p className="text-2xl sm:text-4xl font-bold text-white">12,400+</p>
-                            <p className="text-[10px] sm:text-sm text-slate-400 uppercase tracking-wider">Campaigns</p>
+                            <p className="text-[10px] sm:text-sm text-slate-400 uppercase tracking-wider">Kampanye</p>
                         </div>
                         <div className="space-y-1 sm:space-y-2">
-                            <p className="text-2xl sm:text-4xl font-bold text-white">850k+</p>
-                            <p className="text-[10px] sm:text-sm text-slate-400 uppercase tracking-wider">Global Donors</p>
+                            <p className="text-2xl sm:text-4xl font-bold text-white">850rb+</p>
+                            <p className="text-[10px] sm:text-sm text-slate-400 uppercase tracking-wider">Donatur Global</p>
                         </div>
                         <div className="space-y-1 sm:space-y-2">
                             <p className="text-2xl sm:text-4xl font-bold text-white">98%</p>
-                            <p className="text-[10px] sm:text-sm text-slate-400 uppercase tracking-wider">Success Rate</p>
+                            <p className="text-[10px] sm:text-sm text-slate-400 uppercase tracking-wider">Tingkat Keberhasilan</p>
                         </div>
                     </div>
                 </div>
@@ -149,9 +149,9 @@ export function LandingPage() {
             <section className="py-16 sm:py-24 bg-slate-50">
                 <div className="container mx-auto px-4">
                     <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16 space-y-3 sm:space-y-4">
-                        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-slate-900">A Platform Built on Trust</h2>
+                        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-slate-900">Platform yang Dibangun Atas Kepercayaan</h2>
                         <p className="text-slate-600 text-base sm:text-lg">
-                            Whether you are giving or receiving, we ensure a transparent process every step of the way.
+                            Baik saat Anda memberi maupun menerima, kami memastikan setiap langkah berlangsung secara transparan.
                         </p>
                     </div>
 
@@ -160,23 +160,23 @@ export function LandingPage() {
                             <div className="h-12 w-12 sm:h-14 sm:w-14 bg-green-100 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-green-600 transition-colors">
                                 <Heart className="text-green-600 group-hover:text-white transition-colors" />
                             </div>
-                            <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">For Donors</h3>
+                            <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Untuk Donatur</h3>
                             <ul className="space-y-3 sm:space-y-4 text-slate-600 mb-6 sm:mb-8 text-sm sm:text-base">
                                 <li className="flex items-start gap-3">
                                     <div className="h-2 w-2 rounded-full bg-green-500 mt-2.5 flex-shrink-0"></div>
-                                    <p><b>Free Sign Up:</b> Create your profile and track your impact instantly.</p>
+                                    <p><b>Pendaftaran Gratis:</b> Buat profil Anda dan pantau dampak donasi Anda secara instan.</p>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <div className="h-2 w-2 rounded-full bg-green-500 mt-2.5 flex-shrink-0"></div>
-                                    <p><b>Verified:</b> All campaigns are vetted for legitimacy by our team.</p>
+                                    <p><b>Terverifikasi:</b> Semua kampanye telah diperiksa keabsahannya oleh tim kami.</p>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <div className="h-2 w-2 rounded-full bg-green-500 mt-2.5 flex-shrink-0"></div>
-                                    <p><b>Direct Impact:</b> Your contributions reach causes with minimal fees.</p>
+                                    <p><b>Dampak Langsung:</b> Kontribusi Anda menjangkau penerima manfaat dengan biaya minimal.</p>
                                 </li>
                             </ul>
                             <Link to="/explore">
-                                <Button variant="outline" className="w-full rounded-xl">Explore Causes</Button>
+                                <Button variant="outline" className="w-full rounded-xl">Jelajahi Kampanye</Button>
                             </Link>
                         </div>
 
@@ -184,23 +184,23 @@ export function LandingPage() {
                             <div className="h-12 w-12 sm:h-14 sm:w-14 bg-green-600 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6">
                                 <TrendingUp className="text-white" />
                             </div>
-                            <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">For Recipients</h3>
+                            <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Untuk Penggalang Dana</h3>
                             <ul className="space-y-3 sm:space-y-4 text-slate-300 mb-6 sm:mb-8 text-sm sm:text-base">
                                 <li className="flex items-start gap-3">
                                     <div className="h-2 w-2 rounded-full bg-green-500 mt-2.5 flex-shrink-0"></div>
-                                    <p><b>Free Sign Up:</b> Start your campaign in minutes for free.</p>
+                                    <p><b>Pendaftaran Gratis:</b> Mulai kampanye Anda dalam hitungan menit tanpa biaya.</p>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <div className="h-2 w-2 rounded-full bg-green-500 mt-2.5 flex-shrink-0"></div>
-                                    <p><b>Expert Admin Review:</b> Get your campaign verified for maximum impact.</p>
+                                    <p><b>Tinjauan Admin Ahli:</b> Dapatkan verifikasi kampanye untuk dampak yang maksimal.</p>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <div className="h-2 w-2 rounded-full bg-green-500 mt-2.5 flex-shrink-0"></div>
-                                    <p><b>Direct Engagement:</b> Engage with your donors through updates and messages.</p>
+                                    <p><b>Keterlibatan Langsung:</b> Berinteraksi dengan donatur Anda melalui pembaruan dan pesan.</p>
                                 </li>
                             </ul>
                             <Link to="/create-campaign">
-                                <Button className="w-full bg-green-600 hover:bg-green-700 text-white rounded-xl">Get Started</Button>
+                                <Button className="w-full bg-green-600 hover:bg-green-700 text-white rounded-xl">Mulai Sekarang</Button>
                             </Link>
                         </div>
                     </div>
@@ -212,11 +212,11 @@ export function LandingPage() {
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 mb-8 sm:mb-12">
                         <div>
-                            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Featured Campaigns</h2>
-                            <p className="text-slate-600 text-sm sm:text-base">Explore causes that need your immediate support.</p>
+                            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Kampanye Unggulan</h2>
+                            <p className="text-slate-600 text-sm sm:text-base">Jelajahi berbagai kampanye yang membutuhkan dukungan segera dari Anda.</p>
                         </div>
                         <Link to="/explore" className="text-green-600 font-bold flex items-center gap-1 hover:underline text-sm sm:text-base">
-                            View All <ArrowRight className="h-4 w-4" />
+                            Lihat Semua <ArrowRight className="h-4 w-4" />
                         </Link>
                     </div>
 

@@ -78,7 +78,7 @@ export function DashboardTopbar({ onOpenSidebar }: TopbarProps) {
 
                     <div className="flex items-center gap-3">
                         <div className="hidden sm:block text-right">
-                            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-0.5">Informasi Pengguna</p>
+                            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-0.5">Profil Pengguna</p>
                             <p className="text-sm font-black text-slate-900">nama</p>
                         </div>
                         <div className="relative group cursor-pointer">

@@ -36,7 +36,7 @@ export function DashboardSidebar({ variant, open, onClose }: SidebarProps) {
                     </div>
                     <div>
                         <h1 className="text-xl font-black text-slate-900 leading-none">CrowdFund</h1>
-                        <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Platform Pemasaran</p>
+                        <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Platform Penggalangan Dana</p>
                     </div>
                     {variant === "mobile" && (
                         <button onClick={onClose} className="ml-auto p-2 text-slate-400 hover:text-slate-600 lg:hidden">

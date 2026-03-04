@@ -59,7 +59,7 @@ export function Navbar() {
                     <form onSubmit={handleSearch} className="hidden md:flex relative">
                         <input
                             type="text"
-                            placeholder="Cari campaign..."
+                            placeholder="Cari kampanye..."
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                             className="h-10 pl-10 pr-4 rounded-full bg-slate-100 border-none text-sm focus:ring-2 focus:ring-blue-500 w-48 lg:w-64 transition-all"

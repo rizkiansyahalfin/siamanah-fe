@@ -9,7 +9,7 @@ export function Footer() {
                     <div className="space-y-4">
                         <Link to="/" className="text-xl font-bold text-green-600">FundForward</Link>
                         <p className="text-sm text-muted-foreground">
-                            The most transparent, community-driven platform for positive global change.
+                            Platform penggalangan dana paling transparan dan berbasis komunitas untuk perubahan global yang positif.
                         </p>
                         <div className="flex gap-4">
                             <Facebook className="h-5 w-5 text-muted-foreground hover:text-green-600 cursor-pointer" />
@@ -20,43 +20,43 @@ export function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">For Donors</h4>
+                        <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Untuk Donatur</h4>
                         <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li><Link to="/" className="hover:text-green-600">How It Works</Link></li>
-                            <li><Link to="/explore" className="hover:text-green-600">Donor Guide</Link></li>
-                            <li><Link to="/" className="hover:text-green-600">Trust & Safety</Link></li>
-                            <li><Link to="/" className="hover:text-green-600">Gift Cards</Link></li>
+                            <li><Link to="/" className="hover:text-green-600">Cara Kerja</Link></li>
+                            <li><Link to="/explore" className="hover:text-green-600">Panduan Donatur</Link></li>
+                            <li><Link to="/" className="hover:text-green-600">Kepercayaan & Keamanan</Link></li>
+                            <li><Link to="/" className="hover:text-green-600">Kartu Hadiah</Link></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">For Recipients</h4>
+                        <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Untuk Penggalang Dana</h4>
                         <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li><Link to="/subscription" className="hover:text-green-600">Pricing Plans</Link></li>
-                            <li><Link to="/create-campaign" className="hover:text-green-600">Start Fundraising</Link></li>
+                            <li><Link to="/subscription" className="hover:text-green-600">Paket Harga</Link></li>
+                            <li><Link to="/create-campaign" className="hover:text-green-600">Mulai Galang Dana</Link></li>
                             <li><Link to="/dashboard" className="hover:text-green-600">Dashboard</Link></li>
-                            <li><Link to="/explore" className="hover:text-green-600">Success Stories</Link></li>
+                            <li><Link to="/explore" className="hover:text-green-600">Kisah Sukses</Link></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Company</h4>
+                        <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Perusahaan</h4>
                         <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li><Link to="/about" className="hover:text-green-600">About Us</Link></li>
-                            <li><Link to="/" className="hover:text-green-600">Careers</Link></li>
-                            <li><Link to="/" className="hover:text-green-600">Privacy Policy</Link></li>
-                            <li><Link to="/" className="hover:text-green-600">Terms of Service</Link></li>
+                            <li><Link to="/about" className="hover:text-green-600">Tentang Kami</Link></li>
+                            <li><Link to="/" className="hover:text-green-600">Karir</Link></li>
+                            <li><Link to="/" className="hover:text-green-600">Kebijakan Privasi</Link></li>
+                            <li><Link to="/" className="hover:text-green-600">Syarat & Ketentuan</Link></li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-                    <p>© 2024 FundForward Platform. All Rights Reserved.</p>
+                    <p>© 2024 Platform FundForward. Seluruh Hak Cipta Dilindungi.</p>
                     <div className="flex gap-6">
-                        <Link to="/" className="hover:text-green-600">Privacy</Link>
-                        <Link to="/" className="hover:text-green-600">Terms</Link>
-                        <Link to="/" className="hover:text-green-600">Safety</Link>
-                        <Link to="/" className="hover:text-green-600">Contact</Link>
+                        <Link to="/" className="hover:text-green-600">Privasi</Link>
+                        <Link to="/" className="hover:text-green-600">Ketentuan</Link>
+                        <Link to="/" className="hover:text-green-600">Keamanan</Link>
+                        <Link to="/" className="hover:text-green-600">Kontak</Link>
                     </div>
                 </div>
             </div>
