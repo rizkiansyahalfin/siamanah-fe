@@ -160,7 +160,8 @@ export function LoginPage() {
                         type="button"
                         variant="outline"
                         onClick={handleGoogleLogin}
-                        className="w-full h-11 bg-white/85 hover:bg-white border-white/45 rounded-2xl font-bold flex items-center justify-center gap-3 transition-colors text-gray-700"
+                        disabled={true}
+                        className="w-full h-11 bg-white/85 hover:bg-white border-white/45 rounded-2xl font-bold flex items-center justify-center gap-3 transition-colors text-gray-700 opacity-50 cursor-not-allowed"
                     >
                         <svg className="h-5 w-5" viewBox="0 0 24 24">
                             <path
