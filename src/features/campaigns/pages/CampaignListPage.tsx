@@ -110,7 +110,7 @@ export function CampaignListPage() {
     // We intentionally ignore the react-hooks/exhaustive-deps warning here 
     // because we deliberately want to reset page to 1 ONLY when search/category change
     useEffect(() => {
-        // eslint-disable-next-line react-hooks/set-state-in-effect
+         
         setPage(1);
     }, [debouncedSearch, category]);
 
