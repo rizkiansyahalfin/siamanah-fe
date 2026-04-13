@@ -15,6 +15,7 @@ export interface Campaign {
     slug: string;
     title: string;
     shortDescription: string;
+    description?: string;
     category: {
         id: string;
         name: string;
@@ -90,9 +91,34 @@ export const getPendingCampaigns = async (params: CampaignListParams = {}): Prom
 };
 
 /**
+ * Campaign Statistics structure
+ */
+export interface CampaignStats {
+    campaigns: {
+        total: number;
+        active: number;
+        pending: number;
+        rejected: number;
+    };
+    donations: {
+        totalAmount: number;
+        totalDonors: number;
+    };
+}
+
+/**
+ * Common API Response structure for actions
+ */
+export interface ActionResponse {
+    message: string;
+    success: boolean;
+    data?: unknown;
+}
+
+/**
  * Fetch campaign stats (Admin/Overview)
  */
-export const getCampaignStats = async (): Promise<any> => {
+export const getCampaignStats = async (): Promise<CampaignStats> => {
     const response = await api.get("/api/v1/campaigns/stats");
     return response.data.data;
 };
@@ -100,7 +126,7 @@ export const getCampaignStats = async (): Promise<any> => {
 /**
  * Approve Campaign (Admin)
  */
-export const approveCampaignAPI = async (id: string): Promise<any> => {
+export const approveCampaignAPI = async (id: string): Promise<ActionResponse> => {
     const response = await api.patch(`/api/v1/campaigns/${id}/approve`);
     return response.data;
 };
@@ -108,7 +134,7 @@ export const approveCampaignAPI = async (id: string): Promise<any> => {
 /**
  * Reject Campaign (Admin)
  */
-export const rejectCampaignAPI = async (id: string, reason: string): Promise<any> => {
+export const rejectCampaignAPI = async (id: string, reason: string): Promise<ActionResponse> => {
     const response = await api.patch(`/api/v1/campaigns/${id}/reject`, { reason });
     return response.data;
 };

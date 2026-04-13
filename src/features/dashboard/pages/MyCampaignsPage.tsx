@@ -107,11 +107,11 @@ export function MyCampaignsPage() {
                             <div className="relative aspect-[4/3] overflow-hidden">
                                 <img src={campaign.imageUrl || "https://images.unsplash.com/photo-1542601906970-30f9a2e68099?q=80&w=1332&auto=format&fit=crop"} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt={campaign.title} />
                                 <div className="absolute top-4 left-4 flex gap-2">
-                                    <span className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest ${(campaign as any).status === "ACTIVE" ? "bg-green-500 text-white" :
-                                            (campaign as any).status === "PENDING_REVIEW" ? "bg-orange-500 text-white" :
+                                    <span className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest ${campaign.status === "ACTIVE" ? "bg-green-500 text-white" :
+                                            campaign.status === "PENDING_REVIEW" ? "bg-orange-500 text-white" :
                                                 "bg-blue-600 text-white"
                                         }`}>
-                                        {(campaign as any).status}
+                                        {campaign.status}
                                     </span>
                                 </div>
                             </div>
@@ -119,7 +119,7 @@ export function MyCampaignsPage() {
                                 <div className="space-y-1">
                                     <div className="flex items-center justify-between">
                                         <p className="text-[10px] font-black text-blue-600 uppercase tracking-widest">
-                                            {(typeof campaign.category === 'string' ? campaign.category : (campaign.category as any)?.name) || "Uncategorized"}
+                                            {(typeof campaign.category === 'string' ? campaign.category : campaign.category?.name) || "Uncategorized"}
                                         </p>
                                         <button className="p-1 hover:bg-slate-50 rounded-lg transition-colors">
                                             <MoreVertical className="h-4 w-4 text-slate-400" />

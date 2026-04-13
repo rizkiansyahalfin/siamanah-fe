@@ -10,11 +10,11 @@ import { getBaseUrl, toAbsUrl, getWebsiteSchema } from "@/utils/schemaHelper";
 import { useEffect } from "react";
 
 export function LandingPage() {
-    const baseUrl = getBaseUrl();
-    const websiteSchema = getWebsiteSchema(baseUrl);
-
     // ── SEO Meta Tags ──────────────────────────────────────────────────────────
     useEffect(() => {
+        const baseUrl = getBaseUrl();
+        const websiteSchema = getWebsiteSchema(baseUrl);
+
         document.title = "Beranda | Platform Donasi";
 
         const setMeta = (property: string, content: string) => {
@@ -32,7 +32,6 @@ export function LandingPage() {
             el.setAttribute("content", content);
         };
 
-        const baseUrl = getBaseUrl();
         const pageUrl = `${baseUrl}/`;
         const description = "Platform penggalangan dana terpercaya untuk mewujudkan mimpi dan membantu sesama. Mulai campaign Anda sekarang.";
         const absImageUrl = toAbsUrl(baseUrl, "/og-image.jpg"); // Fallback or landing image
