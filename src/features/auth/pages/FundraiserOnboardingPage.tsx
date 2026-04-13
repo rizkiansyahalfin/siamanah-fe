@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { ShieldCheck, UserCheck, CreditCard, Mail, Phone, FileText } from "lucide-react";
 import { toast } from "sonner";
+import { AxiosError } from "axios";
 
 export default function FundraiserOnboardingPage() {
     const { data: user } = useCurrentUser();
@@ -42,7 +43,8 @@ export default function FundraiserOnboardingPage() {
             onSuccess: () => {
                 toast.success("Selamat! Akun Anda telah diverifikasi sebagai Fundraiser.");
             },
-            onError: (error: any) => {
+            onError: (err: Error) => {
+                const error = err as AxiosError<{ message: string }>;
                 toast.error(error?.response?.data?.message || "Terjadi kesalahan saat verifikasi.");
             }
         });

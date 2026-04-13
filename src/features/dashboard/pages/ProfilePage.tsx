@@ -29,6 +29,7 @@ export function ProfilePage() {
 
     useEffect(() => {
         if (user) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setProfileData({
                 fullName: user.fullName || "",
                 phone: user.phone || ""
