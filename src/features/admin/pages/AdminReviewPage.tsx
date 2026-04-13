@@ -10,6 +10,8 @@ import {
 } from "lucide-react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { getCampaignStats, getPendingCampaigns, approveCampaignAPI, rejectCampaignAPI } from "@/services/campaign.public";
+import type { Campaign } from "@/services/campaign.public";
+import { AxiosError } from "axios";
 import { toast } from "sonner";
 import { Skeleton } from "@/components/ui/skeleton";
 
@@ -40,7 +42,7 @@ export function AdminReviewPage() {
             queryClient.invalidateQueries({ queryKey: ["pending-campaigns"] });
             queryClient.invalidateQueries({ queryKey: ["campaign-stats"] });
         },
-        onError: (error: any) => {
+        onError: (error: AxiosError<{ message: string }>) => {
             toast.error(error.response?.data?.message || "Gagal menyetujui campaign");
         }
     });
@@ -52,7 +54,7 @@ export function AdminReviewPage() {
             queryClient.invalidateQueries({ queryKey: ["pending-campaigns"] });
             queryClient.invalidateQueries({ queryKey: ["campaign-stats"] });
         },
-        onError: (error: any) => {
+        onError: (error: AxiosError<{ message: string }>) => {
             toast.error(error.response?.data?.message || "Gagal menolak campaign");
         }
     });
@@ -188,7 +190,7 @@ export function AdminReviewPage() {
                         </div>
                     ) : pendingData?.data && pendingData.data.length > 0 ? (
                         <div className="grid grid-cols-1 gap-4 sm:gap-6">
-                            {pendingData.data.map((campaign: any) => (
+                            {pendingData.data.map((campaign: Campaign) => (
                                 <div key={campaign.id} className="bg-white p-4 sm:p-6 rounded-[24px] sm:rounded-[32px] border border-slate-100 shadow-soft flex flex-col md:flex-row gap-4 sm:gap-6 hover:shadow-card transition-all duration-300">
                                     <div className="w-full md:w-48 h-40 sm:h-32 rounded-xl sm:rounded-2xl overflow-hidden flex-shrink-0 bg-slate-100">
                                         {campaign.imageUrl ? (
